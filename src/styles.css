@@ -1,0 +1,157 @@
+div {
+  display: block;
+}
+
+h1,
+h2,
+h6 {
+  text-align: center;
+  font-family: "Exo 2", sans-serif;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  padding: 40px 10px 10px 10px;
+}
+
+h2 {
+  color: #282828;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: "Exo 2", sans-serif;
+  font-size: 70px;
+  font-weight: 800px;
+  text-align: left;
+  margin: 40px 0px 0px 15px;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: 15px;
+  padding: 0px 0px 10px 0px;
+}
+
+button {
+  background: transparent;
+  border-style: none;
+  color: rgba(0, 0, 0, 0.4);
+  transition: all 200ms ease-in-out;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+hr {
+  color: #323232;
+  height: 10px;
+  position: relative;
+  border: none;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.app-box {
+  background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+  border: 2px solid black;
+  border-radius: 10px;
+  max-width: 400px;
+  padding: 30px;
+  margin: 10px auto;
+}
+
+.search-bar {
+  width: 200px;
+  border-radius: 5px;
+  border-style: none;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  padding: 3px 0px 3px 12px;
+}
+
+.fas {
+  color: black;
+}
+
+.degree-change {
+  margin: 0px 0px 0px 20px;
+}
+
+#celsius,
+#farenheit {
+  text-decoration: none;
+}
+
+#celsius {
+  color: black;
+}
+
+.split {
+  color: #898b8a;
+}
+
+#fahrenheit {
+  color: #f4f4f2;
+}
+
+#fahrenheit:hover {
+  color: black;
+}
+
+.current-weather {
+  width: 125px;
+  height: 125px;
+  margin: 20px 20px 20px 20px;
+}
+
+.wind,
+.humidity {
+  font-family: "Exo 2", sans-serif;
+  color: #393e46;
+  font-size: 12px;
+  margin: 0px 0px 10px 200px;
+}
+
+#forecast {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+.day {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 900px;
+  margin: 0px 10px 10px 8px;
+}
+
+.tiny-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.col-2 {
+  margin: 5px;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.temp {
+  font-family: "Exo 2", sans-serif;
+  font-size: 15px;
+  margin: 10px 10px 10px 0px;
+}
+
+.low-temp {
+  color: #373a40;
+}

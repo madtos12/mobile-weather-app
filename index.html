@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/9fa5d7bbd6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap"
+      rel="stylesheet"
+    />
+    <!--Axios-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!--CSS file-->
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--App Box-->
+      <div class="app-box">
+        <!--Search Bar-->
+        <form id="search-form">
+          <input
+            type="text"
+            class="search-bar"
+            id="search-input"
+            placeholder="Search for location"
+            autocomplete="off"
+            autofocus="off"
+          />
+
+          <!--Search Button-->
+          <button type="submit" class="search-button" id="search-button">
+            <i class="fas fa-search"></i>
+          </button>
+
+          <!--Location Button-->
+          <button type="submit" class="location-button" id="current-location">
+            <i class="fas fa-map-marker-alt"></i>
+          </button>
+
+          <!--Celsius/Fahrenheit-->
+          <span class="degree-change">
+            <a href="#" id="celsius" class="active">°C</a>
+            <span class="split">|</span>
+            <a href="#" id="fahrenheit">°F</a>
+          </span>
+        </form>
+
+        <!--City-->
+        <h1></h1>
+
+        <!--Current Date & Time-->
+        <h6 id="current-date"></h6>
+
+        <!--Current Weather-->
+        <h2></h2>
+        <div class="row">
+          <div class="col">
+            <!--Current Temperature-->
+            <h3 id="temperature"></h3>
+          </div>
+          <div class="col">
+            <img class="current-weather" src="images/sunny.png" alt="sunny" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <!--Wind & Humidity-->
+            <p class="wind">
+              <img class="tiny-icon" src="images/wind.png" alt="wind" />
+              <span id="current-wind"></span>
+            </p>
+            <p class="humidity">
+              <img class="tiny-icon" src="images/humidity.png" alt="humidity" />
+              <span id="current-humidity"></span>
+            </p>
+          </div>
+        </div>
+
+        <!--Line Break-->
+        <hr />
+
+        <!--5 Day Forecast-->
+        <div class="row" id="forecast">
+          <!--Monday-->
+          <div class="col-2">
+            <p class="day"><strong>Mon</strong></p>
+            <img
+              class="weather-icon"
+              src="images/sun-and-clouds.png"
+              alt="sun behind clouds"
+            />
+            <p class="temp">
+              <strong>1°</strong><span class="low-temp">-7°</span>
+            </p>
+          </div>
+
+          <!--Tuesday-->
+          <div class="col-2">
+            <p class="day"><strong>Tue</strong></p>
+            <img class="weather-icon" src="images/clouds.png" alt="clouds" />
+            <p class="temp">
+              <strong>-3°</strong><span class="low-temp">-5°</span>
+            </p>
+          </div>
+
+          <!--Wednesday-->
+          <div class="col-2">
+            <p class="day"><strong>Wed</strong></p>
+            <img
+              class="weather-icon"
+              src="images/rain.png"
+              alt="cloud with rain"
+            />
+            <p class="temp">
+              <strong>-2°</strong><span class="low-temp">-4°</span>
+            </p>
+          </div>
+
+          <!--Thursday-->
+          <div class="col-2">
+            <p class="day"><strong>Thu</strong></p>
+            <img
+              class="weather-icon"
+              src="images/storm.png"
+              alt="storm cloud with rain and thunder"
+            />
+            <p class="temp">
+              <strong>-5°</strong><span class="low-temp">-3°</span>
+            </p>
+          </div>
+
+          <!--Friday-->
+          <div class="col-2">
+            <p class="day"><strong>Fri</strong></p>
+            <img class="weather-icon" src="images/sunny.png" alt="sunny" />
+            <p class="temp">
+              <strong>2°</strong><span class="low-temp">-1°</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
